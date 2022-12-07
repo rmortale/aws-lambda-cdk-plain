@@ -12,7 +12,7 @@ public class Greetings {
         System.out.println("initialized with configuration: " + message);
     }
 
-    public String onEvent(Map<String, String> event) {
+    public String onEvent(Map<String, Object> event) {
         System.out.println("received: " + event);
         return event
         .entrySet()
